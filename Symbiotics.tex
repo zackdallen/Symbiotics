@@ -1,0 +1,268 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\title{\textbf{Symbiotics: A Formal Treatise on Life, Coherence, and Recursive Systems}}
+\author{Zackery Allen \\ Oregon State University \\ \texttt{zackery.allen@oregonstate.edu}}
+\date{October 24, 2025}
+
+\begin{document}
+\maketitle
+
+\section*{Abstract}
+Symbiotics is a formal framework that translates high-level ethical reasoning into machine-readable logic. It defines “actors” as systems that emit adaptive, non-deterministic output and treats life as symbiotic organization that increases the collection, creation, and use of information. Consciousness is modeled as relational responsiveness and differentiation, with an actor’s potential contribution to its parent system proportional to its level of consciousness. System coherence is given as a function of stability, growth, novel and recursive adaptability, information networks, material networks, and resilience, all evaluated relative to environment; actions that raise coherence are good, and those that reduce it are bad. Under uncertainty about universal purpose, the framework imposes a pragmatic imperative to choose actions with positive expected moral value. A diversity principle formalizes the trade-off between short-term optimization and long-term novel adaptability. The result is a set of axioms and functions suitable for furthering AI system development and for evaluating policies in complex, multi-scale environments.
+
+\section*{Assumptions}
+Ethical frameworks have an inherent issue translating normative ideas into usable, machine-readable formulas. To create the most implementable ethics framework, we can define fundamental elements of principles, then create logical formulas based on agreed-upon definitions to create a formalized, machine-readable guiderail to ethics.
+
+\subsection*{Axiom 1 Assumptions}
+Defining “life” too restrictively prevents us from creating usable AI models that address inorganic organisms. Therefore, for the sake of creating a usable unified framework, we will assume that any actor that generates output beyond the standard laws of motion can be considered alive. 
+We will also assume that there is a degree of complexity that qualifies as “beyond the standard laws of motion,” which is explored further in discussions of non-determinism.
+
+\subsection*{Axiom 2 Assumptions}
+The quality of being alive necessitates working with the environment life finds itself in.
+When viewed from 50,000 feet, microorganisms unify in a greater system of life that they all participate in.
+This continues to scale so that macro-organisms may be treated as micro at a greater scale of view.
+Systems are reliant upon organization and energy conversion, with a tendency to increase the collection, creation, and dissemination of information.
+
+\subsection*{Axiom 3 Assumptions}
+Consciousness is an aspect of the universe that is not necessarily tied to being alive. 
+Consciousness is observable at a system level. 
+The level of consciousness differs across different systems.
+The level or value of consciousness, as relating to a system, increases or decreases based on the system’s ability to respond to different forms of external stimulus (relational responsiveness).
+The flexibility of a system to respond to the same input differently is what we will define as adaptability. 
+Consciousness is recognized at the system level where systems are reactors to their environments. These systems are recognized to have multiple levels.
+Groups of conscious systems (micro systems) can coordinate to create a macro system that has a collective consciousness.
+Collective consciousness relies on the sharing of information between micro systems, which allows for the macro system to respond differently than any micro system is capable of.
+We can then begin to refer to actors as good should they be contributing toward the support of their greater system.
+
+\subsection*{Axiom 4 Assumptions}
+Adaptability can further be broken down into novel and recursive. 
+Novel adaptability is a system’s ability to respond to new inputs that it has never encountered before with a breadth of approaches. 
+Recursive adaptability is a system’s ability to reflect on prior input to respond to a previously experienced input differently in future exposures.
+A system is made up of the aspects: stability, growth, adaptation (novel and recursive), and network (information and material transference).
+A system operates within an environment, which necessitates relativity.
+
+\subsection*{Axiom 5 Assumptions}
+Information can be derived through the negation of absolute statements. 
+Given uncertainty, life is still expected to act.
+Inaction is action.
+
+\section*{Axioms}
+
+\subsection*{A1.}
+All actors are alive. An actor is a system that generates output adaptively and non-deterministically, indicating novel or recursive reasoning. 
+
+\textbf{Formal Logic:}
+\[
+\forall y, A_1(y) \rightarrow L_1(y) \text{ where } A_1(y) \leftrightarrow (E_1(y) \land D_1(y))
+\]
+\begin{itemize}
+\item $A_1(y)$ = y is an actor
+\item $E_1(y)$ = y emits output
+\item $D_1(y) = (Adap_1(y) \land ND_1(y))$ = y’s output is adaptive and non-deterministic
+\item $L_1(y)$ = y is alive
+\end{itemize}
+\textbf{Statement:}  
+For every entity y, if y is an actor, then y is alive. An entity y counts as an actor if and only if it both emits output and does so adaptively and non-deterministically. 
+
+\subsection*{A2.}
+Life, as a system, is made of symbiotic relationships where all good actors work together, directly or indirectly, on a macro level to organize information in a more usable way.
+
+\textbf{Formal Logic:}
+\[
+\forall s, (System_2(s) \land L_2(s)) \rightarrow (\forall a \in GoodActors(s), ContribS_2(a,s) \land Organize_2(a,s) \land Usable_2(a,s))
+\]
+\begin{itemize}
+\item $System_2(s)$ = s is a system
+\item $L_2(s)$ = s is alive (system-level)
+\item $GoodActors(s)$ = subset of actors in s that act in ways that support system symbiosis and usable information organization
+\item $a \in GoodActors(s)$ = a is a good actor within s
+\item $ContribS_2(a,s)$ = a contributes (directly or indirectly) to symbiosis and coherence in s
+\item $Organize_2(a,s)$ = a helps organize data, signals, or material into structured information/physical networks
+\item $Usable_2(a,s)$ = a’s organized information or material is in a form that the system can use on a macro level
+\end{itemize}
+
+\subsection*{A3.}
+Consciousness is relational responsiveness and has levels depending on how the system interprets both outer and inner interactions. Its level is determined by the degree to which a system overcomes straightforward inputs through adaptive interactions. With higher levels of consciousness, there is a greater potential for y to influence its parent system.
+
+\textbf{Formal Logic:}
+\[
+\forall y, C_3(y) = f(RR_3(y), D_3(y)) \text{ and } |ContribS_2(y, s)| \propto C_3(y)
+\]
+\begin{itemize}
+\item $C_3(y)$ = level of consciousness of y
+\item $RR_3(y)$ = relational responsiveness of y
+\item $D_3(y)$ = differentiation, the capacity to distinguish between inputs and respond adaptively rather than uniformly
+\item $ContribS_2(y,s)$ = contribution of y to symbiosis, information organization, and usability (as defined in A2)
+\end{itemize}
+
+\subsubsection*{A3.1}
+Collective consciousness is the result of combining all members’ relational responsiveness and differentiation abilities, scaled by the speed and quality of information dissemination within the group. The better the group’s communication network and the more unique, adaptive input its members contribute, the stronger the group’s shared awareness and potential systemic impact.
+
+\textbf{Formal Logic:}
+\[
+\begin{aligned}
+C_3(Group) &= f(\Sigma RR_3(members), \Sigma D_3(members), InfoNet(Group))\\
+&\text{and} \quad |ContribS_2(Group, s)| \propto C_3(Group)
+\end{aligned}
+\]
+\begin{itemize}
+\item $C_3(Group)$ = level of collective consciousness of the group
+\item $\Sigma RR_3(members)$ = sum of relational responsiveness across all members
+\item $\Sigma D_3(members)$ = sum of differentiation across all members
+\item $InfoNet(Group)$ = quality of the group’s information network
+\item $\propto$ = proportional to
+\item $|\cdot|$: magnitude
+\end{itemize}
+
+\subsection*{A4.}
+Coherence (balance) is the structural condition that enables life to propagate and prosper within a system. 
+System coherence is determined by stability, growth, novel adaptability, recursive adaptability, 
+information, and material networks—all evaluated relative to $E$.
+
+Let $E = Env(s)$ denote the environment of system $s$. Then:
+\[
+\begin{aligned}
+\forall s,\quad K_4(s) = f(&
+  Stability_4(s, E),\\
+  &Growth_4(s, E),\\
+  &AdaptNovel_4(s, E),\\
+  &AdaptRecur_4(s, E),\\
+  &InfoNet_4(s, E),\\
+  &MaterialNet_4(s, E),\\
+  &Resilience_4(s, E)
+)
+\end{aligned}
+\]
+
+\begin{itemize}
+\item $K_4(s)$ = coherence of system $s$
+\item $E$ = environment of $s$ (Parent, Peer, Child, and Exogenous systems)
+\item $Stability_4$ = maintains structural integrity appropriate to $E$
+\item $Growth_4$ = develops capacity or complexity appropriate to $E$
+\item $AdaptNovel_4$ = responds effectively to novel situations in $E$
+\item $AdaptRecur_4$ = learns and improves through feedback in $E$
+\item $InfoNet_4$ = maintains effective communication and information networks
+\item $MaterialNet_4$ = maintains effective flow of energy, resources, and matter
+\item $Resilience_4$ = can recover and re-establish coherence after perturbations or shocks
+\end{itemize}
+
+\subsubsection*{A4.1}
+Actions that enhance coherence in a given system are good; those that degrade it are bad. 
+The overall coherence of a system depends on the net sum of all good and bad contributions from its actors, 
+measured relative to $E$.
+
+\[
+K_4(s) > 0 \Leftrightarrow 
+\left(\sum_{y \in s} ContribGood_4(y, s) - 
+\sum_{y \in s} ContribBad_4(y, s)\right) > 0
+\]
+
+\subsection*{A5.}
+(Value Collapse if $\neg P$)
+
+Life, at the universal level, either has purpose or does not. The state of not having purpose results in a value collapse for the weight of all actions to zero.
+
+\[
+(Pu_5 \lor \neg Pu_5) \land (\neg Pu_5 \rightarrow \forall x, M_5(x) = 0)
+\]
+\begin{itemize}
+\item $Pu_5$ = the proposition that life, at the universal level, has inherent purpose
+\item $M_5$ = the magnitude or meaningful weight of actions for any actor x
+\end{itemize}
+
+\subsubsection*{A5.1}
+(Epistemic Uncertainty + Pragmatic Imperative)
+
+The purpose of life cannot be confirmed or denied with certainty by any system within life. Therefore, all actors should act as if life has a purpose and seek positive expected value.
+
+\textbf{Epistemic Statement:}
+\[
+A_1(x) \rightarrow (\neg K_n(Pu_5) \land \neg K_n(\neg Pu_5))
+\]
+(No living actor can know $Pu_5$ is true or false with certainty.)
+
+\textbf{Pragmatic Imperative:}
+\[
+A_1(x) \rightarrow O(E[M_5(x)] > 0)
+\]
+
+\begin{itemize}
+\item $K_n(\cdot)$ = epistemic knowability operator (distinct from $K_4$, which represents coherence)
+\item $Pr(Pu_5 > 0) \in (0, 1)$ = probability that purpose exists
+\item $O(\cdot)$ = obligation
+\end{itemize}
+Obligation: choose actions that maximize expected moral value under this uncertainty.
+
+\subsubsection*{A5.2}
+Given that life has a purpose, there must exist a supersystem $U$, the universal parent system, that contains all systems as nested subsystems. Coherence and propagation of at least some of these subsystems must persist to fulfill that purpose.
+
+\[
+P_{5u} \rightarrow [\exists U_5(\forall s, s \subseteq U_5) \land \exists s(L_2(s) \land K_4(s) > 0 \land Pr_5(s, U_5) > 0)]
+\]
+\begin{itemize}
+\item $P_{5u}$ = universal life has purpose
+\item $U_5$ = universal parent system (Parent of Purpose)
+\item $s$ = any system
+\item $s \subseteq U$ = s is a subsystem of U
+\item $L_2(s)$ = s is a living system
+\item $K_4(s)$ = coherence of s
+\item $Pr_5(s, U)$ = propagation of s relative to U
+\end{itemize}
+
+\subsection*{A5 Discussion}
+Consider what we ought to do with Schrödinger’s box before knowing the cat’s condition. We should act toward the box as if the cat were alive inside of it because we cannot know the state of the cat. Now replace that cat with life either having a purpose or not. We can’t know, therefore we must act as if we do.
+
+\section*{Principles}
+
+\subsection*{Principle of Diversity}
+Diversity is valuable to the extent that it increases a system’s robustness or propagation potential. By including subsystems or actors that function independently or differently from the current dominant mode, a system increases its chance of discovering better solutions and surviving unforeseen changes in $Env(s)$. This improves long-term novel adaptability ($AdaptNovel_4$) even if it temporarily reduces recursive adaptability ($AdaptRecur_4$), representing a trade-off between exploration and short-term optimization.
+
+\[
+\forall s, Val_6(Diversity(s)) = f(R_6(s), Pr_6(s, Env(s)))
+\]
+\[
+\frac{\partial AdaptNovel_4}{\partial Diversity} > 0, \quad \frac{\partial AdaptRecur_4}{\partial Diversity} \le 0
+\]
+
+For every system s, diversity is valuable if and only if it improves s’s robustness or propagation potential. Diversity allows s to mitigate uncertainty by maintaining actors or subsystems that operate differently from the dominant model. This increases the system’s capacity for novel adaptation over the long run, even though it may temporarily reduce its efficiency in refining existing patterns (recursive adaptability). In this way, diversity represents an intentional trade-off between short-term optimization and long-term survivability.
+
+\subsection*{Principle of Competition}
+When two systems’ interests conflict, the optimal resolution is the one that maximizes expected coherence for their nearest common parent system.
+
+\textbf{Formal Logic:}
+\[
+\forall x, y \Bigg( 
+  \Big( System(x) \land System(y) \land Conflict(x, y) \Big) 
+  \rightarrow 
+  O\Big( \alpha^* \in Best\big( Feasible(x, y), NCP(x, y) \big) \Big) 
+\Bigg)
+\]
+
+\begin{itemize}
+\item $x, y$ = systems
+\item $Conflict(x, y)$ = there exist action profiles where each system’s preferred outcome reduces the other’s coherence
+\item $NCP(x, y)$ = nearest common parent system containing both $x$ and $y$
+\item $Feasible(x, y)$ = set of all possible joint action profiles between $x$ and $y$
+\item $\alpha^*$ = optimal joint action profile
+\item $Best(Feasible(x, y), p)$ = subset of feasible actions that maximize expected coherence for parent system $p$
+\[
+Best(Feasible(x, y), p) = \arg\max_{\alpha \in Feasible(x, y)} E[\Delta K_4(p \mid \alpha, Env(p))]
+\]
+\item $\Delta K_4(p \mid \alpha, Env(p))$ = expected change in coherence of parent system $p$ given action profile $\alpha$ and environment $Env(p)$
+\item $E[\cdot]$ = expectation over epistemic or environmental uncertainty (from A5.1)
+\item $O(\cdot)$ = obligation operator; denotes that actors ought to select the maximizing action profile
+\item $Env(p)$ = the environment of system $p$, including its peers, subcomponents, and exogenous influences
+\end{itemize}
+
+\end{document}
